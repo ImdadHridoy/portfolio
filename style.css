@@ -300,7 +300,7 @@ button:active{
 
 
 .grid {
-  padding: 1em 0 4em;
+  padding: 1em 0 5em;
   list-style: none;
   text-align: center;
   width: 80%;
@@ -573,7 +573,7 @@ footer{
 text-align: left;
 color: whitesmoke;
 margin: 0px;
-padding:8px;
+padding:5px;
 }
 .slide img{
 border-radius: 50%;

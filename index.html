@@ -192,7 +192,7 @@
 					<img src="./img/project1.jpg">
 					<figcaption>
 						<h2>E <span>Commerce</span></h2>
-						<p>Complete Backend and frontend of a E-commerce <br> product  management System <br><br> Using Laravel/php/MySql/Jquery/Ajax</p>
+						<p>Complete Backend and frontend of a <br> E-commerce  product  management System <br><br> Using Laravel/php/MySql/Jquery/Ajax</p>
 					</figcaption>			
 				</figure>
 			</div>
@@ -202,7 +202,7 @@
 					<img src="./img/project2.jpg">
 					<figcaption>
 						<h2><span>Sales  & Inventory</span></h2>
-						<p>Complete Backend of Product Sales &  <br> Inventory Managemant System<br><br> Using Laravel/php/MySql/Jquery/Ajax/Vue</p>
+						<p>Complete Backend of Product Sales &  <br> Inventory Managemant System<br><br> Using Laravel/php/MySql/Jquery/Ajax/<br>Vue</p>
 					</figcaption>			
 				</figure>
 			</div>
@@ -278,30 +278,6 @@ $(document).ready(function(){
 
 
 
-$(document).scroll(function() {
-  var y = $(this).scrollTop();
-  if (y >= 20) {
-  		$('.dev-skills').fadeIn(2000);
-  		$('.design-skills').fadeIn(2500);
-
-  }  
-
-  if (y >= 20) {
-  		$('.about-fade').fadeIn(1000);
-
-  } 
-
-  if(y>=50){
-  	$('.effect-oscar').fadeIn(1000);
-  }
-  else {
-    $('.dev-skills').fadeOut();
-    $('.design-skills').fadeOut();
-    $('.about-fade').fadeOut();
-    $('.effect-oscar').fadeOut();
-
-  }
-});
 
 
 $(document).ready(function(){
@@ -329,7 +305,9 @@ $(document).ready(function(){
 });
 
 $('.contact_btn').on('click',function(){
-	var content = '<div style="height:350px;width:450px;position:absolute;z-index:1;border-radius:12px;"><div class="slide" style="background:midnightblue;height:100%;border-radius:12px;padding:50px">'+
+	var content = '<div style="height:350px;width:450px;position:absolute;z-index:1;border-radius:12px;">'+
+	'<div class="slide" style="background:midnightblue;height:100%;border-radius:12px;padding:50px">'+
+			'<span style="padding:0px;marin:0px;float:right" ><a href="" class="fas fa-times-circle" style="color:red;font-size:20px" id="btn-cross"></a></span><br>'+
 			'<img src="./img/suited.jpg" height="90" width="90"><br>'+
 			'<p>Email:&nbsp imdad.gub@gmail.com</p><br>'+
 			'<p>Phone:&nbsp  +880 1648163334 </p><br>'+
@@ -340,6 +318,10 @@ $('.contact_btn').on('click',function(){
 			'</div>';
 	$('.contact-info').empty().html(content);
 	$('.slide').slideToggle(-1000000000000000000000000).slideDown(600);
+});
+
+$('#btn-cross').on('click',function(){
+	$('.slide').remove();
 });
 
 $('.head-img').on('mouseenter',function(){
