@@ -43,7 +43,7 @@ nav {
 }
 nav ul{
 	display: flex;
-	/*padding-right:70px;*/
+	padding-right:70px;
 }
 .toggle{
 	display: none;
@@ -171,7 +171,7 @@ nav ul li .fas{
 	height:42px;
 	border-radius:10px;
 	font-family:calibri;
-	font-weight:bold;
+
 	font-size: 14px;
 	outline:none;
 	margin:0px 10px;
@@ -345,8 +345,7 @@ button:active{
   pointer-events: none;
 }
 
-.grid figure figcaption,
-.grid figure figcaption > a {
+.grid figure figcaption {
   position: absolute;
   top: 0;
   left: 0;
@@ -364,26 +363,6 @@ button:active{
   opacity: 0;
 }
 
-.grid figure h2 {
-  word-spacing: -0.05em;
-  font-weight: 300;
-}
-
-.grid figure h2 span {
-  font-weight: 800;
-}
-
-.grid figure h2,
-.grid figure p {
-  margin: 0;
-}
-
-.grid figure p {
-  letter-spacing: 2px;
-  font-size: 20px;
-  color: whitesmoke;
-}
-
 
 
 
@@ -392,11 +371,7 @@ figure.effect-oscar {
   background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
 }
 
-figure.effect-oscar img {
-  opacity: 0.9;
-  -webkit-transition: opacity 0.35s;
-  transition: opacity 0.35s;
-}
+
 
 figure.effect-oscar figcaption {
   padding: 3em;
