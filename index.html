@@ -186,37 +186,35 @@
 			<div class="project-text">
 				<h1>Projects</h1>
 			</div>
-
+			<div class="project-details">
 			<div class="grid">
-				<figure class="effect-oscar">
-					<img src="./img/ecommerce-v2.png" >
-					<figcaption>
+				<div class="grid-section">
+					<img src="./img/ecommerce-v2.png" height="100%" width="100%" style="border-radius:12px;">
+					<div class="figcaption">
 						<h2>E <span>Commerce</span></h2>
 						<p>Complete Backend and frontend of a E-commerce <br> product  management System <br><br> Using Laravel/php/MySql/Jquery/Ajax</p>
-					</figcaption>			
-				</figure>
+					</div>			
+				</div>
 			</div>
-
 			<div class="grid">
-				<figure class="effect-oscar">
-					<img src="./img/sales_inventory.png" >
-					<figcaption>
+				<div class="grid-section">
+					<img src="./img/sales_inventory.png" height="100%" width="100%" style="border-radius:12px;">
+					<div class="figcaption">
 						<h2><span>Sales  & Inventory</span></h2>
 						<p>Complete Backend of Product Sales &  <br> Inventory Managemant System<br><br> Using Laravel/php/MySql/Jquery/Ajax/Vue</p>
-					</figcaption>			
-				</figure>
+					</div>			
+				</div>
 			</div>
-
 			<div class="grid">
-				<figure class="effect-oscar">
-					<img src="./img/library_management.png">
-					<figcaption>
-						<h2><span>Online &nbsp Library  &nbsp Management</span></h2>
-						<p>This was my first ever project using <br> raw Php/bootstrap/MySql/</p>
-					</figcaption>			
-				</figure>
+				<div class="grid-section">
+					<img src="./img/library_management.png" height="100%" width="100%" style="border-radius:12px;">
+					<div class="figcaption">
+						<h2><span class="caption-heading">Online &nbsp Library  &nbsp Management</span></h2>
+						<p class="caption">This was my first ever project using <br> raw Php/bootstrap/MySql/</p>
+					</div>			
+				</div>
 			</div>
-
+		</div>
 		</div>
 
 
@@ -279,30 +277,6 @@ $(document).ready(function(){
 
 
 
-$(document).scroll(function() {
-  var y = $(this).scrollTop();
-  if (y >= 20) {
-  		$('.dev-skills').fadeIn(2000);
-  		$('.design-skills').fadeIn(2500);
-
-  }  
-
-  if (y >= 20) {
-  		$('.about-fade').fadeIn(1000);
-
-  } 
-
-  if(y>=50){
-  	$('.effect-oscar').fadeIn(1000);
-  }
-  else {
-    $('.dev-skills').fadeOut();
-    $('.design-skills').fadeOut();
-    $('.about-fade').fadeOut();
-    $('.effect-oscar').fadeOut();
-
-  }
-});
 
 
 $(document).ready(function(){
