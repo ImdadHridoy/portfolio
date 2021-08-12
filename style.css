@@ -306,6 +306,7 @@ button:active{
   width: 80%;
   margin: 0px auto;
   height: auto;
+  margin-right: 120px;
 }
 /*.grid-on{
   display: block;
@@ -322,9 +323,10 @@ button:active{
   background: #3085a3;
   text-align: center;
   cursor: pointer;
+  border-radius: 12px;
 }
 
-.grid figure img {
+.effect-oscar img {
   position: relative;
   display: block;
   height: 500px;
