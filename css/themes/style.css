@@ -66,15 +66,14 @@ nav ul li .fas{
 	/*font-weight:700;*/
 	padding: 2px;
 }
-.name{
-	font-family:Impact, fantasy;
-	color:whitesmoke !important;
-	padding-left: 10px;
-
-}
-.logo-img{
+.logo{
+	font-family:monospace;
+	color:whitesmoke;
+	font-size: 20px;
 	padding: 10px;
+	margin-left: 20px;
 }
+
 .active{
 	color:#2d2a2a;
 	font-weight:bold;
@@ -301,172 +300,15 @@ button:active{
 
 
 
-
-.grid {
-  padding: 1em 0 5em;
-  list-style: none;
-  text-align: center;
-  width: 80%;
-  margin: 0px auto;
-  height: auto;
-  margin-right: 120px;
+.caption{
+	opacity: 0;
 }
-/*.grid-on{
-  display: block;
-  transition: 0.1 ease all;
-
-}*/
-
-/* Common style */
-.grid figure {
-  position: relative;
-  height: auto;
-  width: 100%;
-  overflow: hidden;
-  background: #3085a3;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 12px;
-}
-
-.effect-oscar img {
-  position: relative;
-  display: block;
-  height: 500px;
-  width:100%;
-  opacity: 0.8;
-}
-
-.grid figure figcaption {
-  padding: 1em;
-  color: #fff;
-  font-size: 1em;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.grid figure figcaption::before,
-.grid figure figcaption::after {
-  pointer-events: none;
-}
-
-.grid figure figcaption,
-.grid figure figcaption > a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
-.grid figure figcaption > a {
-  z-index: 1000;
-  text-indent: 10%;
-  white-space: nowrap;
-  font-size: 0;
-  opacity: 0;
-}
-
-.grid figure h2 {
-  word-spacing: -0.05em;
-  font-weight: 300;
-}
-
-.grid figure h2 span {
-  font-weight: 800;
-}
-
-.grid figure h2,
-.grid figure p {
-  margin: 0;
-}
-
-.grid figure p {
-  letter-spacing: 2px;
-  font-size: 20px;
-  color: whitesmoke;
-}
-
-
-
-
-figure.effect-oscar {
-  background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
-  background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
-}
-
-figure.effect-oscar img {
-  opacity: 0.9;
-  -webkit-transition: opacity 0.35s;
-  transition: opacity 0.35s;
-}
-
-figure.effect-oscar figcaption {
-  padding: 3em;
-  background-color: rgba(58,52,42,0.7);
-  -webkit-transition: background-color 0.35s;
-  transition: background-color 0.35s;
-}
-
-figure.effect-oscar figcaption::before {
-  position: absolute;
-  top: 40px;
-  right: 10px;
-  bottom: 30px;
-  left: 30px;
-  border: 1px solid #fff;
-  content: '';
-  width: 80%;
-  height: 70%;
-}
-
-figure.effect-oscar h2 {
-  margin: 20% 0 10px 0;
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  -webkit-transform: translate3d(0,100%,0);
-  transform: translate3d(0,100%,0);
-}
-
-figure.effect-oscar figcaption::before,
-figure.effect-oscar p {
-  opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: scale(0);
-  transform: scale(0);
-}
-
-figure.effect-oscar:hover h2 {
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
-
-figure.effect-oscar:hover figcaption::before,
-figure.effect-oscar:hover p {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
-figure.effect-oscar:hover figcaption {
-  background-color: rgba(58,52,42,0);
-}
-
-figure.effect-oscar:hover img {
-  opacity: 0.4;
-}
-
-
-
-
 
 
 .contact-me{
+	padding-top:20px;
 	width: 80%;
-	height:280px;
+	height:304px;
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-image: url("../images/project in your mind.png");
@@ -589,15 +431,14 @@ padding:5px;
 
 /*progress bar*/
 .skil-container{
-  width: 85%;
-  max-width:1000px;
+  width: 80%;
   min-height: 600px;
   margin:0 auto;
 }
 .display-skill{
 	display: flex;
 	height: auto;
-	width: 85%;
+	width: 80%;
 	margin: 0px auto;
 }
 .skill-heading{
@@ -897,20 +738,54 @@ padding:5px;
 	
 }
 
-.text-project{
-color: green !important;
-background: green;
+.text-project h3{
+	color: #7db641;
+	text-align: center;
+	padding-top:50px;
+	font-family:impact, fantasy;
+	letter-spacing:2px;
+}
+.text-project h4{
+	color: gray;
+	text-align: center;
+}
+
+.name{
+	color: whitesmoke !important;
+	margin-left: 10px;
 }
 
 
+.carousel{
+	height: 200px !important;
+}
 
+.nopadding{
+	margin:0px !important;
+	padding:0px !important;
+}
+.highlightSection{
+	min-height: auto;
+	width: 80%;
+	margin: 0 auto;
+}
+.form-control{
+	border-radius: 10px !important;
+}
+.project-media{
+	height: 340px;
 
+}
 
+.carousel-body{
+	height: 100%;
+	margin-top:40px;
+	background: #4caf5030;
+	padding: 20px;
+}
+.carousel-control-prev-icon{
 
-
-
-
-
+}
 
 
 

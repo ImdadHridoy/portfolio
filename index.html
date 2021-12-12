@@ -2,42 +2,51 @@
 <html>
 <head>
 	<title>Personal Portfolio</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="./css/themes/style.css">
 <!--using FontAwesome---------------->
 <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="./js/jquery-3.5.0.min.js"></script>
-<link rel="stylesheet" href="./font-awesome/css/fontawesome.min.css" crossorigin="anonymous">
+<link href="./css/themes/bootstrap.min.css" rel="stylesheet">
+<script src="./js/bootstrap.min.js" ></script>
 
 </head>
 <body>
 	<section>
 		<!-- Navigation -->
-		<nav>
-			<!-- Logo -->
-			<div style="display:flex;" class="logo-img">
-				<img class="head-img" src="./img/suited.jpg" height="40" width="40" style="border-radius: 50%;">
-				<a href="" class="logo" style="display: flex;" >Imdad</a>
+		<nav >
+			<div class="row col-md-12" style="height: 50px;margin-left:0px ">
+				<div class="col-md-4 row nopadding">
+					<img class="head-img" src="./img/suited.jpg" height="40" width="40" style="border-radius: 50%;">
+					<div class="" ><h3 class="name">Imdad</h3></div>
+				</div>
+				<div class="col-md-6 " style="padding:10px;">
+					<ul>
+						<li><span class="fas fa-home"></span> &nbsp <a href="#home">Home</a></li>
+						<li><span class="fas fa-user"></span> &nbsp <a href="#about">About</a></li>
+						<li><span class="fas fa-medal"></span> &nbsp <a href="#skill">Skill</a></li>
+						<li><span class="fas fa-project-diagram"></span> &nbsp <a href="#project">Projects</a></li>
+						<li><span class="fas fa-envelope-square"></span> &nbsp <a href="#contact">Contact</a></li>
+					</ul>
+				</div>		
+				<div class="col-md-2" style="padding: 8px">
+					<ul>
+						<li><a class="btn btn-sm btn-success" href="#home" style="padding-top:2px"><img src="./img/bangladesh.png" height="20px">&nbsp Bangladesh</a></li>
+					</ul>
+				</div>
 			</div>
-			<ul>
-				<li><span class="fas fa-home"></span> &nbsp <a href="#home">Home</a></li>
-				<li><span class="fas fa-user"></span> &nbsp <a href="#about">About</a></li>
-				<li><span class="fas fa-medal"></span> &nbsp <a href="#skill">Skill</a></li>
-				<li><span class="fas fa-project-diagram"></span> &nbsp <a href="#project">Projects</a></li>
-				<li><span class="fas fa-envelope-square"></span> &nbsp <a href="#contact">Contact me</a></li>
-			</ul>
 		</nav>
 		
 
 		<!--text----------------------->
-		<div class="wrapper" id="home" style="background: #eff1eb;">
-			<div style="height:530px;width:100%;background:#343477;">
+		<div class="wrapper" id="home" style="background: #e5e9e1;">
+			<div style="height:530px;width:100%;background:#a6b1b9;">
 				<div class="text-wrapper">
 					<div class="text-container">
 						<h1 class="hello">Hello..</h1>
 					    <h3 class="me">It's me IMDAD HRIDOY</h3>
 						<h3 class="about-me">Web Designer & Developer</h3>
 						<button class="hire-btn">Hire me</button>
-						<button class="down-cv">Download CV</button>
+						<a href="cv/" download="cv.pdf" class="down-cv">Download Cv</a> 
 					</div>
 				</div>
 			<!--model---------------------->
@@ -70,154 +79,306 @@
 					<!--about-me-text-->
 			</div>
 
-			<div class="skil-container" id="skill">
-				<div class="skill-heading">
-					<h1>Skills</h1>
+		<div class="skil-container" id="skill">
+			 <h1  class="form-control" name="" readonly disabled style="text-align: center;font-family: impact,fantasy;font-size:25px;width: 100%">#Skills <br>
+     			<span style="font-size: 16px;font-family: sans-serif;">Gaining the expert level knowledge and training of web designing <br> to start a rewarding career is my motive.</span>
+    		</h1>
+
+			<div class="display-skill">
+				<div class="dev-skills">
+				<h1>Developing</h1>  
+				   	<div class="skill">
+				      	<!-- title -->
+				      	<div class="skill-title">
+				         PHP
+				      	</div>
+				      	<!-- bar -->
+				      	<div class="skill-bar" data-bar="100"><span></span></div>
+				   	</div>  
+				   	<div class="skill">
+				      	<!-- title -->
+				      	<div class="skill-title">
+				         Laravel
+				      	</div>
+				      	<!-- bar -->
+				      	<div class="skill-bar" data-bar="100"><span></span></div>
+				   	</div>
+				   	<div class="skill">
+				      	<!-- title -->
+				      	<div class="skill-title">
+				         AJax
+				      	</div>
+				      	<!-- bar -->
+				      	<div class="skill-bar" data-bar="100"><span></span></div>
+				   	</div>	   
+				   <div class="skill">
+				      	<!-- title -->
+				      	<div class="skill-title">
+				         Basic OOP
+				      	</div>
+				      	<!-- bar -->
+				      	<div class="skill-bar" data-bar="100"><span></span></div>
+				   </div>	   
+				   <div class="skill">
+				      	<!-- title -->
+				      	<div class="skill-title">
+				         MySql
+				      	</div>
+				      	<!-- bar -->
+				      	<div class="skill-bar" data-bar="100"><span></span></div>
+				   </div>
+				   <!-- #skill -->
 				</div>
-				<div class="display-skill">
-					<div class="dev-skills">
-					<h1>Developing</h1>  
-					   	<div class="skill">
-					      	<!-- title -->
-					      	<div class="skill-title">
-					         PHP
-					      	</div>
-					      	<!-- bar -->
-					      	<div class="skill-bar" data-bar="100"><span></span></div>
-					   	</div>  
-					   	<div class="skill">
-					      	<!-- title -->
-					      	<div class="skill-title">
-					         Laravel
-					      	</div>
-					      	<!-- bar -->
-					      	<div class="skill-bar" data-bar="100"><span></span></div>
-					   	</div>
-					   	<div class="skill">
-					      	<!-- title -->
-					      	<div class="skill-title">
-					         AJax
-					      	</div>
-					      	<!-- bar -->
-					      	<div class="skill-bar" data-bar="70"><span></span></div>
-					   	</div>	   
-					   <div class="skill">
-					      	<!-- title -->
-					      	<div class="skill-title">
-					         Basic OOP
-					      	</div>
-					      	<!-- bar -->
-					      	<div class="skill-bar" data-bar="90"><span></span></div>
-					   </div>	   
-					   <div class="skill">
-					      	<!-- title -->
-					      	<div class="skill-title">
-					         MySql
-					      	</div>
-					      	<!-- bar -->
-					      	<div class="skill-bar" data-bar="100"><span></span></div>
-					   </div>
-					   <!-- #skill -->
-					</div>
-					<div class="design-skills">
-					<h1>Designing</h1>
-					   <!-- skill -->
-					   	<div class="skill">
-					      	<!-- title -->
-					      	<div class="skill-title">
-					         HTML
-					      	</div>
-					      	<!-- bar -->
-					      	<div class="skill-bar" data-bar="100"><span></span></div>
-					   	</div>
-					   	<!-- #skill -->
-					   	<!-- skill -->
-					   	<div class="skill">
-						      <!-- title -->
-						      <div class="skill-title">
-					         	CSS
-					      	</div>
-					      	<!-- bar -->
-					     	<div class="skill-bar" data-bar="100"><span></span></div>
-					   	</div>
-					   	<!-- #skill -->
-					   	<!-- skill -->
-					   	<div class="skill">
-						    <!-- title -->
-						    <div class="skill-title">
-						         Bootstrap
-						    </div>
-						    <!-- bar -->
-						    <div class="skill-bar" data-bar="80"><span></span></div>
-					   	</div>
-					   	<!-- #skill -->
-					   	<div class="skill">
-					      	<!-- title -->
-					      	<div class="skill-title">
-					         JavaScript
-					      	</div>
-					      	<!-- bar -->
-					      	<div class="skill-bar" data-bar="60"><span></span></div>
-					   	</div>
-					   	<div class="skill">
-					      	<!-- title -->
-					      	<div class="skill-title">
-					         Vue Js
-					      	</div>
-					      	<!-- bar -->
-					      	<div class="skill-bar" data-bar="50"><span></span></div>
-					   	</div>
-						<div class="skill">
-					      	<!-- title -->
-					      	<div class="skill-title">
-					         JQuery
-					      	</div>
-					      	<!-- bar -->
-					      	<div class="skill-bar" data-bar="70"><span></span></div>
-					   	</div>  
-					</div>
+				<div class="design-skills">
+				<h1>Designing</h1>
+				   <!-- skill -->
+				   	<div class="skill">
+				      	<!-- title -->
+				      	<div class="skill-title">
+				         HTML
+				      	</div>
+				      	<!-- bar -->
+				      	<div class="skill-bar" data-bar="100"><span></span></div>
+				   	</div>
+				   	<!-- #skill -->
+				   	<!-- skill -->
+				   	<div class="skill">
+					      <!-- title -->
+					      <div class="skill-title">
+				         	CSS
+				      	</div>
+				      	<!-- bar -->
+				     	<div class="skill-bar" data-bar="100"><span></span></div>
+				   	</div>
+				   	<!-- #skill -->
+				   	<!-- skill -->
+				   	<div class="skill">
+					    <!-- title -->
+					    <div class="skill-title">
+					         Bootstrap
+					    </div>
+					    <!-- bar -->
+					    <div class="skill-bar" data-bar="100"><span></span></div>
+				   	</div>
+				   	<!-- #skill -->
+				   	<div class="skill">
+				      	<!-- title -->
+				      	<div class="skill-title">
+				         JavaScript
+				      	</div>
+				      	<!-- bar -->
+				      	<div class="skill-bar" data-bar="100"><span></span></div>
+				   	</div>
+				   	<div class="skill">
+				      	<!-- title -->
+				      	<div class="skill-title">
+				         Vue Js
+				      	</div>
+				      	<!-- bar -->
+				      	<div class="skill-bar" data-bar="50"><span></span></div>
+				   	</div>
+					<div class="skill">
+				      	<!-- title -->
+				      	<div class="skill-title">
+				         JQuery
+				      	</div>
+				      	<!-- bar -->
+				      	<div class="skill-bar" data-bar="100"><span></span></div>
+				   	</div>  
 				</div>
 			</div>
+		</div>
 
 
 
 		<!--services-container---------------------------->
-		<div class="project " id="project">
-			<div class="project-text">
-				<h1>Projects</h1>
-			</div>
 
-			<div class="grid">
-				<figure class="effect-oscar">
-					<img src="./img/project1.jpg">
-					<figcaption>
-						<h2><span>E - Commerce</span></h2>
-						<p>Complete Backend and frontend of a <br> E-commerce  product  management System <br><br> Using Laravel/php/MySql/Jquery/Ajax</p>
-					</figcaption>			
-				</figure>
-			</div>
 
-			<div class="grid">
-				<figure class="effect-oscar">
-					<img src="./img/project2.jpg">
-					<figcaption>
-						<h2><span>Sales  & Inventory</span></h2>
-						<p>Complete Backend of Product Sales &  <br> Inventory Managemant System<br><br> Using Laravel/php/MySql/Jquery/Ajax/<br>Vue</p>
-					</figcaption>			
-				</figure>
-			</div>
+		<div class="highlightSection">
+		    <h1  class="form-control" name="" readonly disabled style="text-align: center;font-family: impact,fantasy;font-size:25px">#Projects <br>
+		        <span style="font-size: 15px;font-family: sans-serif;"></span>
+		    </h1>
+		    <div class="col-md-12 project-media">
+		        <div class="row carousel-body">
+		            <div class="col-md-5 nopadding text-project">
+		                <h3>Apartment Management System</h3>
+		                <h4>A software system that provide functionality to manage day to day operation of an Apartment</h4>
+		                <p style="text-align: center;color:gray;font-weight: bold;">Design and Develop by using Laravel-7/PHP-7/MySql/Jquery/Ajax </p>
+		            </div>
+		            <div class="col-md-7">
+						<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
+						  <ol class="carousel-indicators">
+						    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						  </ol>
+						  <div class="carousel-inner">     
+						    <div class="carousel-item active">
+						      <img class="img"  src="./img/ams/front.png" alt="First slide" style="height: 270px;width: 100%">
+							    <div class="caption" style="position:absolute;color:red;top:20px;left:10%;">
+							    </div>
+						    </div> 
+						    <div class="carousel-item">
+						      <img src="./img/ams/buy-flat.png" alt="Second slide" style="height: 270px;width: 100%">
+						          <div class="caption" style="position:absolute;color:red;top:20px;left:10%;">
+							    </div>
+						    </div>
+						    <div class="carousel-item">
+						      <img src="./img/ams/tolet.png" alt="Third slide"  style="height: 270px;width: 100%">
+						          <div class="caption" style="position:absolute;color:red;top:20px;left:10%;">
+							    </div>
+						    </div>
 
-			<div class="grid">
-				<figure class="effect-oscar">
-					<img src="./img/project3.jpg">
-					<figcaption>
-						<h2><span>Online &nbsp Library  &nbsp Management</span></h2>
-						<p>This was my first ever project using <br> raw Php/bootstrap/MySql/</p>
-					</figcaption>			
-				</figure>
-			</div>
+						    <div class="carousel-item">
+						      <img class="img"  src="./img/ams/admin-dashboard.png" alt="First slide" style="height: 270px;width: 100%">
+							    <div class="caption" style="position:absolute;color:red;top:20px;left:10%;">
+							    </div>
+						    </div> 
+
+						    <div class="carousel-item">
+						      <img class="img"  src="./img/ams/owner-dashboard.png" alt="First slide" style="height: 270px;width: 100%">
+							    <div class="caption" style="position:absolute;color:red;top:20px;left:10%;">
+							    </div>
+						    </div>  
+
+						    <div class="carousel-item">
+						      <img class="img"  src="./img/ams/tenant_dashboard.png" alt="First slide" style="height: 270px;width: 100%">
+							    <div class="caption" style="position:absolute;color:red;top:20px;left:10%;">
+							    </div>
+						    </div>  
+
+						    <div class="carousel-item">
+						      <img class="img"  src="./img/ams/emp_dashboard.png" alt="First slide" style="height: 270px;width: 100%">
+							    <div class="caption" style="position:absolute;color:red;top:20px;left:10%;">
+							    </div>
+						    </div>
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Next</span>
+						  </a>
+						</div>        	
+		            </div>
+		        </div>
+		    </div>    
+
+		    <div class="col-md-12 project-media">
+		        <div class="row carousel-body">
+		            <div class="col-md-6 carousel-wrap">
+						<div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" >
+						  <ol class="carousel-indicators">
+						    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						  </ol>
+						  <div class="carousel-inner">
+						    <div class="carousel-item active">
+						      <img class="img"  src="./img/ecommerce/ecommerce-frontend.png" alt="First slide" style="height: 270px;width: 100%">
+							    <div class="caption" style="position:absolute;color:red;top:20px;left:10%;">
+							    </div>
+						    </div> 
+						    <div class="carousel-item">
+						      <img src="./img/ecommerce/ecommerce-frontend2.png" alt="Second slide" style="height: 270px;width: 100%">
+						          <div class="caption" style="position:absolute;color:red;top:20px;left:10%;">
+							    </div>
+						    </div>
+						    <div class="carousel-item">
+						      <img src="./img/ecommerce/ecommerce-frontend3.png" alt="Third slide"  style="height: 270px;width: 100%">
+						          <div class="caption" style="position:absolute;color:red;top:20px;left:10%;">
+							    </div>
+						    </div>    
+						    <div class="carousel-item">
+						      <img src="./img/ecommerce/ecommerce-backend.png" alt="Third slide"  style="height: 270px;width: 100%">
+						          <div class="caption" style="position:absolute;color:red;top:20px;left:10%;">
+							    </div>
+						    </div>
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Next</span>
+						  </a>
+						</div>        	
+		            </div>
+
+		            <div class="col-md-6 nopadding text-project">
+		                <h3>Ecommerce</h3>
+		                <h4>That is my first ever ecommerce project for practice. I design and Develop complete ecommerce frontend and backend.</h4>
+		                 <p style="text-align: center;color:gray;font-weight: bold;">Design and Develop by using Laravel-7/PHP-7/MySql/Jquery/Ajax </p>
+		            </div>
+		        </div>
+		    </div>
+
+		    <div class="col-md-12 project-media">
+		        <div class="row carousel-body">
+
+		            <div class="col-md-6 nopadding text-project">
+		                <h3>Ecommerce product Sales and Utility Management</h3>
+		                <h4>A software system develop for managing day to day management of purchase and sale of products of a local entrepreneur.</h4>
+		                 <p style="text-align: center;color:gray;font-weight: bold;">Design and Develop by using Laravel-7/PHP-7/MySql/Jquery/Ajax </p>
+		            </div>
+		            <div class="col-md-6 carousel-wrap">
+						<div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel" >
+						  <ol class="carousel-indicators">
+						    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						  </ol>
+						  <div class="carousel-inner">
+						    <div class="carousel-item active">
+						      <img class="img"  src="./img/product-sales_and_utility/dashboard.png" alt="First slide" style="height: 270px;width: 100%">
+							    <div class="caption" style="position:absolute;color:red;top:20px;left:10%;">
+							    </div>
+						    </div> 
+						    <div class="carousel-item">
+						      <img src="./img/product-sales_and_utility/product.png" alt="Second slide" style="height: 270px;width: 100%">
+						          <div class="caption" style="position:absolute;color:red;top:20px;left:10%;">
+							    </div>
+						    </div>
+						    <div class="carousel-item">
+						      <img src="./img/product-sales_and_utility/product-1.png" alt="Third slide"  style="height: 270px;width: 100%">
+						          <div class="caption" style="position:absolute;color:red;top:20px;left:10%;">
+							    </div>
+						    </div>    
+						    <div class="carousel-item">
+						      <img src="./img/product-sales_and_utility/order.png" alt="Third slide"  style="height: 270px;width: 100%">
+						          <div class="caption" style="position:absolute;color:red;top:20px;left:10%;">
+							    </div>
+						    </div>
+						    <div class="carousel-item">
+						      <img src="./img/product-sales_and_utility/profit.png" alt="Third slide"  style="height: 270px;width: 100%">
+						          <div class="caption" style="position:absolute;color:red;top:20px;left:10%;">
+							    </div>
+						    </div>  
+						    <div class="carousel-item">
+						      <img src="./img/product-sales_and_utility/calculator.png" alt="Third slide"  style="height: 270px;width: 100%">
+						          <div class="caption" style="position:absolute;color:red;top:20px;left:10%;">
+							    </div>
+						    </div>
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Next</span>
+						  </a>
+						</div>        	
+		            </div>
+		        </div>
+		    </div>    
 
 		</div>
+		</div>
+
 
 
 		<!--if you have any project in your mind contact me-->
@@ -239,29 +400,31 @@
 
 		<!--footer--------------->
 	 	<footer style="background: black;">
-		 	<img src="./img/suited.jpg" height="90" width="90" style="border-radius:50%;margin-top: 10px;">	
-		 	<!--heading-->
-	  	<p style="color: white;">Imdad Hridoy</p>
-		 	<!--paragraph-->
-			<p class="quotes">I have to study myself in actuality – as I am, not as I wish to be.<br>
-				—KRISHNAMURTI</p>
-			<!--social-->
-			<div class="social-icons">
-			<a href="#"  class="fb"><i class="fab fa-facebook-f"></i></a>
-			<a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-			<a href="#"><i class="fab fa-twitter"></i></a>
-			<a href="#"><i class="fab fa-youtube"></i></a>
-			</div>
+	 	<center>
+			 <img src="./img/suited.jpg" height="90" width="90" style="border-radius:50%;margin-top: 10px;">	
+			 	<!--heading-->
+		  	<p style="color: white;">Imdad Hridoy</p>
+			 	<!--paragraph-->
+				<p class="quotes">I have to study myself in actuality – as I am, not as I wish to be.<br>
+					—KRISHNAMURTI</p>
+				<!--social-->
+				<div class="social-icons" style="margin-left:40%;">
+				<a href="#"  class="fb"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-youtube"></i></a>
+				</div>
 			 <!--copyright-->
+			</center>
 		</footer>
 			<!--social-attach-bar-->
-			<div class="social">
-			<a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
-			<a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-			<a href="#" ><i class="fab fa-twitter"></i></a>
-			<a href="#"><i class="fab fa-youtube"></i></a>
+
+		<div class="social">
+		<a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+		<a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+		<a href="#" ><i class="fab fa-twitter"></i></a>
+		<a href="#"><i class="fab fa-youtube"></i></a>
 		</div>
-	</div>
 </section>
 
 
@@ -324,12 +487,14 @@ $('#btn-cross').on('click',function(){
 	$('.slide').remove();
 });
 
-$('.head-img').on('mouseenter',function(){
-	var content ='<div class="append-img" style="position:absolute"><img src="./img/suited.png" width="300" height="300" style="border-radius:50%"></div>';
-		$('.logo-img').append(content);
-		
 
+$('.carousel-wrap').on('mouseover',function(){
+	$('.caption').css("opacity","1");
 });
+$('.carousel-wrap').on('mouseleave',function(){
+	$('.caption').css("opacity","0");
+});
+
 $('.head-img').on('mouseleave',function(){
 	$('.append-img').remove();
 });
