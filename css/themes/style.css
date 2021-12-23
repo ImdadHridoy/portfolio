@@ -28,10 +28,8 @@ section{
 	height: auto;
 	width: 100%;
 }
-nav {
+.nav {
 	display: flex;
-	justify-content: space-between;
-	align-items:center;
 	height:50px;
 	width: 100%;
 	background-color:#52545a;
@@ -41,26 +39,25 @@ nav {
 
 	
 }
-nav ul{
+.nav ul{
 	display: flex;
-	padding-right: 70px;
 }
 .toggle{
 	display: none;
 }
 
-nav ul li{
+.nav ul li{
 	display: flex;
 	padding: 3px;
 }
-nav ul li a{
+.nav ul li a{
 	margin-right:20px;
 	font-family: calibri;
 	color:whitesmoke;
 	font-size: 16px;
 	font-weight:700;
 }
-nav ul li .fas{
+.nav ul li .fas{
 	color:whitesmoke;
 	font-size: 14px;
 	/*font-weight:700;*/
