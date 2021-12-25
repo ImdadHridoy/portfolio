@@ -16,16 +16,16 @@
 		<div class="nav">
 			<div class="row col-md-12" style="height: 50px;margin-left:0px ">
 				<div class="col-md-3 row nopadding">
-					<img class="head-img" src="./img/suited.jpg" height="40" width="40" style="border-radius: 50%;">
+					<img class="head-img" src="./img/my_pic/suited.jpg" height="40" width="40" style="border-radius: 50%;">
 					<div class="" ><h3 class="name">Imdad</h3></div>
 				</div>
 				<div class="col-md-6" style="padding-top:10px;height: 100%;">
 					<ul>
-						<li><span class="fas fa-home"></span> &nbsp <a href="#home">Home</a></li>
-						<li><span class="fas fa-user"></span> &nbsp <a href="#about">About</a></li>
-						<li><span class="fas fa-medal"></span> &nbsp <a href="#skill">Skill</a></li>
-						<li><span class="fas fa-project-diagram"></span> &nbsp <a href="#project">Projects</a></li>
-						<li><span class="fas fa-envelope-square"></span> &nbsp <a href="#contact">Contact</a></li>
+						<li><span class="fas fa-home"></span> &nbsp <a class="li-a"  href="#home">Home</a></li>
+						<li><span class="fas fa-user"></span> &nbsp <a class="li-a" href="#about">About</a></li>
+						<li><span class="fas fa-medal"></span> &nbsp <a class="li-a" href="#skill">Skill</a></li>
+						<li><span class="fas fa-project-diagram"></span> &nbsp <a class="li-a" href="#project">Projects</a></li>
+						<li><span class="fas fa-envelope-square"></span> &nbsp <a class="li-a" href="#contact">Contact</a></li>
 					</ul>
 				</div>		
 				<div class="col-md-2" style="height: 100%;margin-left: 50px;padding-top:5px">
@@ -39,32 +39,37 @@
 
 		<!--text----------------------->
 		<div class="wrapper" id="home" style="background: #e5e9e1;">
-			<div style="height:530px;width:100%;background:#a6b1b9;">
+			<div style="height:400px;width:100%;background: black;filter: blur(1px);-webkit-filter:blur(1px);">
+				<center>
+				<img src="./img/my_pic/banner.gif" style="height:400px;width:90%;position:relative;">
+				</center>
+			</div>
+
+			<center>
 				<div class="text-wrapper">
-					<div class="text-container">
-						<h1 class="hello">Hello..</h1>
+					<div alt="model" class="model">
+						<div>
+							<img class="model-img" src="./img/my_pic/main_profile3.png"> 
+						</div>
+					</div>
+					<div class="text-container" >
+						<p class="hello">Hello..</p>
 					    <h3 class="me">It's me IMDAD HRIDOY</h3>
-						<h3 class="about-me">Web Designer & Developer</h3>
+						<h3 class="about-me">Web based Software Developer</h3>
 						<button class="hire-btn">Hire me</button>
 						<a href="cv/" download="cv.pdf" class="down-cv">Download Cv</a> 
 					</div>
 				</div>
-			<!--model---------------------->
-				<div alt="model" class="model">
-					<div>
-						<img class="model-img" src="./img/main_profile.png" height="410" width="485"> 
-					</div>
-				</div>
-			</div>
+			</center>
 
 
 			<div class="about-container" id="about">
 				<div class="about-text">
 					<p>About Me</p>
-					<p>Developer & Designer</p>
+					<p>Web based Software Developer</p>
 					
 					<div class="about-fade-p">
-						<p class="about-fade" >Hello, It's me Imdad Hridoy. I am a Web Developer and also a Web Designer. I usually work on building interactive and lightweight Web based software for any business and personal use. If you interested, please contact me. <br><br>
+						<p class="about-fade" >Hello, It's me Imdad Hridoy. I am a Web Developer and also a Web Designer. I usually work on building interactive and lightweight Web based software system for any business and personal use. If you interested, please contact me. <br><br>
 
 						I'm very responsible and reliable to my commitment and my deal.
 						I'm pretty much confident that You will like my work, I will give you satisfied result according to your requirements.
@@ -74,9 +79,9 @@
 					<button>Hire Me</button>
 					<button>Download CV</button>
 				</div>
-					<!--img-->
-					<img src="./img/test.jpg" style="border-radius: 50px;">
-					<!--about-me-text-->
+				<!--img-->
+				<img src="./img/my_pic/cover.jpg" style="">
+				<!--about-me-text-->
 			</div>
 
 		<div class="skil-container" id="skill">
@@ -401,7 +406,7 @@
 		<!--footer--------------->
 	 	<footer style="background: black;">
 	 	<center>
-			 <img src="./img/suited.jpg" height="90" width="90" style="border-radius:50%;margin-top: 10px;">	
+			 <img src="./img/my_pic/suited.jpg" height="90" width="90" style="border-radius:50%;margin-top: 10px;">	
 			 	<!--heading-->
 		  	<p style="color: white;">Imdad Hridoy</p>
 			 	<!--paragraph-->
@@ -468,15 +473,17 @@ $(document).ready(function(){
 });
 
 $('.contact_btn').on('click',function(){
+	var insta = 'http://instagram.com/imdad_hrid';
+	var fb = 'http://facebook.com/violet.anonymous/';
 	var content = '<div style="height:450px;width:450px;position:absolute;z-index:1;border-radius:12px;">'+
 	'<div class="slide" style="background:midnightblue;height:100%;border-radius:12px;padding:50px">'+
 			'<span style="padding:0px;marin:0px;float:right" ><a href="" class="fas fa-times-circle" style="color:red;font-size:20px" id="btn-cross"></a></span><br>'+
-			'<img src="./img/suited.jpg" height="90" width="90"><br>'+
+			'<img src="./img/my_pic/about.png" height="90" width="90" style="border-radius:50%;"><br>'+
 			'<p>Email:&nbsp imdad.gub@gmail.com</p><br>'+
 			'<p>Phone:&nbsp  +880 1648163334 </p><br>'+
 			'<p>Address:&nbsp  Noakhali Sadar,maijdee,Bangladesh</p><br> '+
-			'<p>Fb_Link:&nbsphttp://facebook.com/violet.anonymous </p><br> '+
-			'<p>Insta_Link:&nbsphttp://instagram.com/imdad__violet </p><br> '+
+			'<p>Fb_Link: &nbsp<a href='+fb+'>http://facebook.com/violet.anonymous </a></p><br> '+
+			'<p>Insta_Link: &nbsp<a href='+insta+'>http://instagram.com/imdad_hrid </a></p><br> '+
 			'</div>'+
 			'</div>';
 	$('.contact-info').empty().html(content);

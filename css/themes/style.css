@@ -56,6 +56,8 @@ section{
 	color:whitesmoke;
 	font-size: 16px;
 	font-weight:700;
+    text-decoration: none;
+
 }
 .nav ul li .fas{
 	color:whitesmoke;
@@ -63,6 +65,38 @@ section{
 	/*font-weight:700;*/
 	padding: 2px;
 }
+
+.li-a {
+    display: inline-block;
+    color: #000;
+}
+.li-a
+{
+	color: #70869d;
+	text-shadow: 2px 20px 5px rgba(0, 0, 0, 0.9),
+	5px 23px 5px rgba(0, 0, 0, 0.3),
+	8px 27px 8px rgba(0, 0, 0, 0.5),
+ 
+}
+
+.li-a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: lightblue;
+    transition: width .3s;
+
+}
+
+.li-a:hover::after {
+    width: 100%;
+    transition: width .2s;
+}
+
+
+
+
 .logo{
 	font-family:monospace;
 	color:whitesmoke;
@@ -71,6 +105,7 @@ section{
 	margin-left: 20px;
 }
 
+
 .active{
 	color:#2d2a2a;
 	font-weight:bold;
@@ -78,27 +113,32 @@ section{
 
 .model{
 	height:100%;
-	width: 500px;
-	position:relative;
-	bottom:85%;
-	left:70%;
-	transform: translateX(-50%);
+	width: auto;
+	position:absolute;
+	bottom:63%;
+	left: 40%;
+	/*margin: -14%  auto 20px auto;*/
+	/*transform: translateX(-50%);*/
 }
 .model-img{
-
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: center;
+	border:5px solid whitesmoke;
 }
 .hello{
 	transition-delay: calc(var(--delay)*3);
 	padding: 0px;
 	margin: 0px;
-	width: 0ch;
 	white-space: nowrap;
-	color: whitesmoke;
-	/*transition: all 0.9s ease;*/
+	color: #3746379c;
+	transition: all 0.9s ease;
 	font-family: sans-serif;
 	font-weight:bold;
 	font-size:30px;
-	animation: hello 2s steps(7);
+	animation: hello 2s steps(6);
 }
 @keyframes hello{
 	0%{
@@ -117,13 +157,12 @@ section{
 .me{
 	padding: 0px;
 	margin: 0px;
-	width: 0ch;
 	white-space: nowrap;
-	color:whitesmoke;
+	color:#706923;
 	font-family:sans-serif;
 	font-weight:bold;
-	font-size:30px;
-	animation: me 3s steps(34);
+	font-size:22px;
+	animation: me 3s steps(26);
 
 }
 @keyframes me{
@@ -132,19 +171,18 @@ section{
 		overflow:hidden;
 		
 	}
-	100%{
-		width:34ch;
+	50%{
+		width:23ch;
 		overflow:visible;
 	}
 }
 .about-me{
-	width: 0ch;
 	white-space: nowrap;
 	font-family: calibri;
 	font-weight:bold;
-	color: whitesmoke;
-	font-size:30px;
-	animation: about-me 2s steps(50);
+	color: #305e5e;
+	font-size:24px;
+	animation: about-me 2s steps(30);
 }
 @keyframes about-me{
 	0%{
@@ -153,14 +191,15 @@ section{
 		
 	}
 	100%{
-		width:40ch;
+		width:30ch;
 		overflow:visible;
 	}
 }
-.text-container p{
+/*.text-container p{
 	margin:45px 0px 25px;
 	line-height:0px;
-}
+
+}*/
 .text-container button{
 	width:130px;
 	height:42px;
@@ -173,15 +212,15 @@ section{
 	
 }
 .text-container{
-	padding-top:100px;
+	padding-top:65px;
+	height: 100%;
+	width:500px;
+
 }
 .text-wrapper{
-	height:530px;
-	width: 500px;
 	position: relative;
-	left:18%;
-	top:50%;
-	transform:translate(-13%,-42%);
+	background: #e5e9e1;
+	height: 300px;
 }
 .hire-btn{
 	border:2px solid #373636;
@@ -215,24 +254,25 @@ button:active{
 }
 
 .about-container{
-	width:80%;
+	width:90%;
 	height:450px;
 	background:whitesmoke;
 	border-radius:20px;
 	box-shadow:2px 2px 12px rgba(0,0,0,0.2);
 	display: flex;
-	margin: -4%  auto 20px auto;
+	/*margin: -4%  auto 20px auto;*/
 	position: relative;
 	justify-content:space-evenly;
 	align-items: center;
+	margin: 0 auto;
 
 }
 
 
 .about-container img{
-	height:300px;
-	width:25%;
-	background: midnightblue;
+	border-radius: 50px;
+	width:300px;
+	height: 350px;
 
 }
 .about-text{
@@ -429,6 +469,7 @@ padding:5px;
   width: 80%;
   min-height: 600px;
   margin:0 auto;
+  padding-top: 10px; 
 }
 .display-skill{
 	display: flex;
@@ -651,10 +692,10 @@ padding:5px;
 		
 	}
 	.text-container{
-		top: 50%;
+	/*	top: 50%;
 		left: 50%;
 		transform: translate(-50%,-50%);
-		width: 80%;
+		width: 80%;*/
 	}
 	nav ul{
 		margin: 0px;
