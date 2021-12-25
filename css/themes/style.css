@@ -115,14 +115,14 @@ section{
 	height:100%;
 	width: auto;
 	position:absolute;
-	bottom:63%;
-	left: 40%;
+	bottom:55%;
+	left: 41%;
 	/*margin: -14%  auto 20px auto;*/
 	/*transform: translateX(-50%);*/
 }
 .model-img{
-	width: 250px;
-	height: 250px;
+	width: 230px;
+	height: 230px;
 	border-radius: 50%;
 	object-fit: cover;
 	object-position: center;
