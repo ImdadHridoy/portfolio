@@ -1119,3 +1119,6 @@ footer.entry-meta .meta-in {
   font-size:20px;
   color:#2B2B2B;
 }
+.display{
+  display: none !important;
+}
