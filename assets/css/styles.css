@@ -1001,14 +1001,14 @@ footer.entry-meta .meta-in {
 }
 
 
-.text-project h3{
-  color: #7db641;
+.text-project h4{
+  color: #9f8cb1;
   text-align: center;
   padding-top:5px;
-  font-family:impact, fantasy;
+  font-family:sans-serif;
   letter-spacing:2px;
 }
-.text-project h4{
+.text-project h6{
   color: gray;
   text-align: center;
   font-size: 18px;

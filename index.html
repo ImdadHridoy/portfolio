@@ -27,14 +27,12 @@
 		</h1>
 	</div>
 
-	<nav class="navbar navbar-expand-lg bg-light navbar-light ">
+	<nav class="navbar navbar-expand-lg bg-light navbar-light">
 			<a class="navbar-brand">
 				<div id="google_translate_element"></div>
 			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			</button>
-			<a class="fas fa-bars" ></a>
-			<a class="fas fa-times-circle tab-append" style="display: none;"></a>
+			<a class="fas fa-bars"  style="font-size:30px;color:grey;"></a>
+			<a class="fas fa-times-circle tab-append" style="display: none;font-size:30px;color:darkred;"></a>
 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
@@ -222,8 +220,8 @@
 			  	<div class="col-md-12 project-media">
 			        <div class="row carousel-body">
 			            <div class="col-md-5 nopadding text-project">
-			                <h3>Apartment Management System</h3>
-			                <h4>A software system that provide functionality to manage day to day operation of an Apartment</h4>
+			                <h4>Apartment Management System</h4>
+			                <h6>A software system that provide functionality to manage day to day operation of an Apartment</h6>
 			                <p style="text-align: center;color:gray;font-weight: bold;">Design and Develop by using Laravel-7/PHP-7/MySql/Jquery/Ajax </p>
 			            </div>
 			            <div class="col-md-7">
@@ -336,8 +334,8 @@
 			            </div>
 
 			            <div class="col-md-6 nopadding text-project">
-			                <h3>Ecommerce</h3>
-			                <h4>That is my first ever ecommerce project for practice. I design and Develop complete ecommerce frontend and backend.</h4>
+			                <h4>Ecommerce</h4>
+			                <h6>That is my first ever ecommerce project for practice. I design and Develop complete ecommerce frontend and backend.</h6>
 			                 <p style="text-align: center;color:gray;font-weight: bold;">Design and Develop by using Laravel-7/PHP-7/MySql/Jquery/Ajax </p>
 			            </div>
 			        </div>
@@ -347,8 +345,8 @@
 			        <div class="row carousel-body">
 
 			            <div class="col-md-6 nopadding text-project">
-			                <h3>Ecommerce product Sales and Utility Management</h3>
-			                <h4>A software system develop for managing day to day management of purchase and sale of products of a local entrepreneur.</h4>
+			                <h4>Ecommerce product Sales and Utility Management</h4>
+			                <h6>A software system develop for managing day to day management of purchase and sale of products of a local entrepreneur.</h6>
 			                 <p style="text-align: center;color:gray;font-weight: bold;">Design and Develop by using Laravel-7/PHP-7/MySql/Jquery/Ajax </p>
 			            </div>
 			            <div class="col-md-6 carousel-wrap">
@@ -438,8 +436,8 @@
 
 
 			            <div class="col-md-6 nopadding text-project">
-			                <h3>Ronger Mela (Personal Blog Website)</h3>
-			                <h4>A website developed for managing online blog named "ROngerMela".</h4>
+			                <h4>Ronger Mela (Personal Blog Website)</h4>
+			                <h6>A website developed for managing online blog named "ROngerMela".</h6>
 			                 <p style="text-align: center;color:gray;font-weight: bold;">Design and Develop by using Laravel-7/PHP-7/MySql/Jquery/Ajax </p>
 			            </div>
 
@@ -452,7 +450,7 @@
 	<div class="contact-me card" id="contact">
 		<div class="contact-content">
 			<div class="contact-info"style="margin-right:300px"></div>
-			<h3>Get in Touch</h3>
+			<h4>Get in Touch</h4>
 			<p>I'm currently not taking on any freelance work. If you are student who wants any guidance, feel free <br> to drop a mail. I would love to help you out.I can help with the following:</p>
 
 			<p style="text-align:center;font-family: calibri;font-size: 18px;color: gray;">
@@ -671,6 +669,17 @@ $('.fa-bars').on('click',function() {
 });
 $('.tab-append').on('click',function() {
 	location.reload();
+});
+
+$(document).ready(function(){
+    
+  	if (screen.width > 960){
+    $('.fa-bars').hide();
+    	$('.fa-times-circle').hide();
+	}
+  	if (screen.width < 800){
+     $('.fa-bars').show();
+  	}
 });
 </script>
 </body>
