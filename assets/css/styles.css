@@ -225,7 +225,7 @@ a:hover {
 
 **********************************************************************/
 #head {
-  background: #f4f4f4 url(../images/banner1.jpg) top  center;
+  background: linear-gradient(rgba(0, 0, 100, 0.5), rgba(255, 200, 0, 0.5)), url(../images/banner_cover.jpeg) bottom  center;
   background-size: cover;
   color: #7C7C7C;
   padding: 30px 0 35px 0;
