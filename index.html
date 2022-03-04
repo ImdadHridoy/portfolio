@@ -17,6 +17,14 @@
 </head>
 <body class="trans-section home" >
 
+<div id="loading"  class =" col-md-12" style="display:none;">
+	<center>
+	<img src="assets/images/loader.gif" center no-repeat #fff >
+		<h1 data-text="loading…">loading…</h1>
+</div>
+
+<div class="faded">
+
 <header id="header">
 	<div id="head" class="parallax" parallax-speed="2">
 		<h1 id="logo" class="text-center">
@@ -576,7 +584,7 @@
 	</div>
 </footer>
 
-
+</div>
 
 <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -682,6 +690,21 @@ $(document).ready(function(){
   	if (screen.width < 800){
      $('.fa-bars').show();
   	}
+});
+</script>
+
+
+<script>
+$(document).ready(function () {
+
+var loading = $("#loading");
+loading.show();
+$('.faded').css('opacity','.08');
+});
+
+$(window).load(function() {
+$('#loading').hide();
+$('.faded').css('opacity','1');
 });
 </script>
 </body>

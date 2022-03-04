@@ -11,13 +11,7 @@ body {
 .topspace {
   margin-top: 40px;
 }
-/*********************************************************************
 
-
-                            Navigation in header
-
-
-**********************************************************************/
 .navbar {
   border-width: 1px 0;
   -webkit-border-radius: 0;
@@ -1080,4 +1074,53 @@ footer.entry-meta .meta-in {
 }
 .display{
   display: none !important;
+}
+
+
+
+
+/*Loadung CSS*/
+
+#loading{
+    position:fixed;
+    z-index: 10000000000000;
+}
+#loading img{
+    height: 300px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+
+}
+
+
+@media all and (max-width: 1000px) {
+    #loading img {margin-top:230px !important;}
+}
+
+h1 {
+    position: relative;
+    color: white !important;
+    font-size: 10em;
+}
+h1:before {
+    content: attr(data-text);
+    position: absolute;
+    overflow: hidden;
+    max-width: 7em;
+    white-space: nowrap;
+    color: white;
+    animation: loading 2s infinite;
+}
+@keyframes loading {
+    0% {
+        max-width: 0;
+    }
+    50%{
+      color: dodgerblue;
+    }
+    100%{
+      color: lightcyan;
+    }
 }
